@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>hey sip – Fresh Nutrition Drinks, Delivered Every Morning</title>
+<style>
+:root{--bg:#fbf7ee;--card:#fff;--ink:#2b2b2b;--mute:#5e6b63;--line:#e3e8dd;--green:#1f4d3a;--onGreen:#fff;--soft:#e8f1dd;--orange:#f28c28;--hero:#1f4d3a;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14201a;--card:#1d2c24;--ink:#eef3ea;--mute:#a9b8ae;--line:#2c3f34;--green:#8fd0a0;--soft:#24382d;--hero:#0f2b20;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14201a;--card:#1d2c24;--ink:#eef3ea;--mute:#a9b8ae;--line:#2c3f34;--green:#8fd0a0;--soft:#24382d;--hero:#0f2b20;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{max-width:1000px;margin:0 auto;padding:0 18px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.logo{font-size:26px;font-weight:800;color:var(--green);text-decoration:none}.logo i{color:var(--orange);font-style:normal}
+nav a.l{color:var(--mute);text-decoration:none;font-size:14px;margin-left:16px}
+.hero{background:var(--hero);color:#fff;border-radius:0 0 28px 28px;position:relative;overflow:hidden}
+.hero .w{padding-top:6px;padding-bottom:46px;position:relative;z-index:1}
+.hero nav .logo{color:#fff}.hero nav a.l{color:#cfe3d4}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%}
+.hero:before{width:320px;height:320px;background:#7bb661;opacity:.2;right:-90px;top:-110px}
+.hero:after{width:240px;height:240px;background:#f28c28;opacity:.18;left:-90px;bottom:-110px}
+.tag{font-size:12px;letter-spacing:.14em;color:#b8dca3;font-weight:700;margin-top:26px}
+h1{font-size:clamp(32px,7vw,54px);line-height:1.08;margin:8px 0 14px;max-width:640px}
+h1 em{color:#f6b05c;font-style:normal}
+.lead{color:#d7e6cf;max-width:520px;margin:0 0 24px}
+.btn{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:700;padding:13px 24px;border-radius:999px;margin:0 8px 8px 0}
+.btn.o{background:transparent;border:2px solid #cfe3d4;color:#fff;padding:11px 22px}
+.trust{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:20px;font-size:13px;color:#cfe3d4}
+.trust span:before{content:"✓ ";color:#f6b05c}
+section{padding:38px 0 6px}
+h2{font-size:clamp(24px,5vw,32px);color:var(--green);margin:0 0 6px}.sub{color:var(--mute);margin:0 0 20px}
+.eyebrow{font-size:12px;letter-spacing:.14em;color:var(--orange);font-weight:700}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.step,.seg,.faq{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.num{width:30px;height:30px;border-radius:50%;background:var(--orange);color:#fff;font-weight:700;display:grid;place-items:center;margin-bottom:8px}
+.step b,.seg b{color:var(--green);display:block;margin-bottom:2px}.step p,.seg p{margin:0;color:var(--mute);font-size:14px}
+.segs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.seg{border-top:5px solid var(--c)}.seg ul{margin:10px 0 0;padding:0;list-style:none;font-size:14px}
+.seg li{padding:4px 0;border-top:1px dashed var(--line)}.seg small{color:var(--mute)}
+.seg a{display:inline-block;margin-top:10px;color:var(--green);font-weight:700;text-decoration:none;font-size:14px}
+.cust{background:var(--soft);border-radius:20px;padding:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:14px}
+.faq{margin-bottom:10px}.faq b{color:var(--green)}.faq p{margin:4px 0 0;color:var(--mute);font-size:14px}
+.cta{background:var(--hero);color:#fff;border-radius:22px;padding:30px 22px;text-align:center;margin:34px 0}
+.cta h2{color:#fff}.cta p{color:#d7e6cf}
+footer{border-top:1px solid var(--line);padding:22px 0 34px;color:var(--mute);font-size:12px;text-align:center}
+</style>
+</head>
+<body>
+<header class="hero"><div class="w">
+<nav><a class="logo" href="#">hey sip<i>.</i></a><div><a class="l" href="#how">How it works</a><a class="l" href="#segments">Menu</a><a class="l" href="#faq">FAQ</a></div></nav>
+<div class="tag">NUTRITION DRINK SUBSCRIPTION · BANGALORE</div>
+<h1>Fresh nutrition. <em>Every single morning.</em></h1>
+<p class="lead">Choose a focus, make it yours, and we’ll prepare it fresh and deliver it to your door. Seven days. Seven different drinks.</p>
+<a class="btn" href="#segments">Build your plan</a><a class="btn o" href="#segments">Try a sample</a>
+<div class="trust"><span>Made fresh daily</span><span>Fully customizable</span><span>Seasonal ingredients</span><span>Monthly plans</span></div>
+</div></header>
+
+<main class="w">
+<section id="how"><div class="eyebrow">HOW IT WORKS</div><h2>Simple as 1-2-3-4.</h2><p class="sub">No daily ordering. No fuss.</p>
+<div class="steps">
+<div class="step"><div class="num">1</div><b>Pick your focus</b><p>Six segments built around how you want to feel.</p></div>
+<div class="step"><div class="num">2</div><b>Make it yours</b><p>Tell us your tastes, allergies and goals.</p></div>
+<div class="step"><div class="num">3</div><b>Subscribe monthly</b><p>One plan, paid monthly. Change it when your needs change.</p></div>
+<div class="step"><div class="num">4</div><b>Sip fresh daily</b><p>Prepared every morning, delivered to your door.</p></div>
+</div></section>
+
+<section id="segments"><div class="eyebrow">THE MENU</div><h2>Six focus segments.</h2><p class="sub">Each is a full week of different drinks. A taste of each below.</p>
+<div class="segs">
+<div class="seg" style="--c:#f28c28"><b>General Health &amp; Immunity</b><p>Build your everyday defence.</p><ul><li>Amla-Ginger Shot</li><li>Turmeric-Pepper Golden Milk</li><li>Pomegranate-Beetroot Juice</li><li><small>+ 4 more in the weekly menu</small></li></ul><a href="#plan">Customize this plan →</a></div>
+<div class="seg" style="--c:#e5708f"><b>Skin &amp; Hair Glow</b><p>Glow from the inside out.</p><ul><li>Papaya-Orange Smoothie</li><li>Almond-Saffron Milk</li><li>Cucumber-Mint-Aloe Cooler</li><li><small>+ 4 more in the weekly menu</small></li></ul><a href="#plan">Customize this plan →</a></div>
+<div class="seg" style="--c:#b03a5b"><b>Vitamin &amp; Mineral Support</b><p>Iron, B12, Vitamin D and Calcium support.</p><ul><li>Beetroot-Dates-Pomegranate</li><li>Ragi-Sesame-Jaggery Shake</li><li>Fortified Milk-Banana Shake</li><li><small>+ 4 more in the weekly menu</small></li></ul><a href="#plan">Customize this plan →</a></div>
+<div class="seg" style="--c:#c98a0b"><b>Energy &amp; Fitness</b><p>Fuel before. Recover after.</p><ul><li>Dates-Peanut Butter Shake</li><li>Sattu-Lemon Cooler</li><li>Oats-Cocoa Protein Shake</li><li><small>+ 4 more in the weekly menu</small></li></ul><a href="#plan">Customize this plan →</a></div>
+<div class="seg" style="--c:#5fa043"><b>Gut Health &amp; Digestion</b><p>Light, soothing, easy on the gut.</p><ul><li>Spiced Chaas</li><li>Jaljeera-Mint Cooler</li><li>Papaya-Ginger Smoothie</li><li><small>+ 4 more in the weekly menu</small></li></ul><a href="#plan">Customize this plan →</a></div>
+<div class="seg" style="--c:#3fa7a0"><b>Kids’ Growth &amp; Seniors’ Nutrition</b><p>Age-smart portions, textures and tastes.</p><ul><li>Banana-Dates Milk Shake</li><li>Ragi Malt with Jaggery</li><li>Carrot-Apple-Orange Juice</li><li><small>+ 4 more in the weekly menu</small></li></ul><a href="#plan">Customize this plan →</a></div>
+</div></section>
+
+<section id="plan"><div class="cust"><div><div class="eyebrow">YOUR PLAN, YOUR WAY</div><h2>Customize everything.</h2><p class="sub" style="margin:0">Swap days, pick portions, and tell us what to avoid. Warm in winter, chilled in summer.</p></div>
+<div class="chips"><span>Warm or chilled</span><span>No added sugar</span><span>Dairy-free</span><span>Nut-free</span><span>Vegan</span><span>Kids · Adult · Senior portions</span><span>Swap your days</span></div></div></section>
+
+<section id="faq"><div class="eyebrow">GOOD TO KNOW</div><h2>Questions, answered.</h2><p class="sub"></p>
+<div class="faq"><b>When do I order?</b><p>Order by 9 PM for delivery the next morning.</p></div>
+<div class="faq"><b>Where do you deliver?</b><p>We start with select areas of Bangalore. Enter your PIN code at checkout to check.</p></div>
+<div class="faq"><b>Are the drinks medicine?</b><p>No. hey sip drinks are food products, not medicine, and aren’t meant to diagnose, treat or cure any condition. For medical dietary needs, please consult your doctor.</p></div>
+</section>
+
+<div class="cta"><h2>Make every morning count.</h2><p>Fresh. Personal. hey sip.</p><a class="btn" href="#segments">Build your plan</a></div>
+</main>
+<footer><div class="w">© hey sip · hey sip.in · FSSAI Lic. No. ______________</div></footer>
+</body>
+</html>
